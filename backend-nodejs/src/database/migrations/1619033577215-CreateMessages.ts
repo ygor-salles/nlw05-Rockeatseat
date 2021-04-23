@@ -30,6 +30,16 @@ export class CreateMessages1619033577215 implements MigrationInterface {
                         type: 'timestamp',
                         default: 'now()'
                     },
+                ],
+                foreignKeys: [
+                    {
+                        name: 'FKUser',
+                        referencedTableName: 'users',
+                        referencedColumnNames: ['id'],
+                        columnNames: ['user_id'],
+                        onDelete: 'SET NULL',
+                        onUpdate: 'SET NULL',
+                    }
                 ]
             })
         )
