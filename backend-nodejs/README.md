@@ -24,6 +24,7 @@ yarn tsc --init
 ```bash
 yarn add ts-node-dev -D
 ```
+## Instalando o framework de servidor web ExpressJS
 
 * Instalando o expressJS
 ```bash
@@ -52,7 +53,13 @@ const app = express();
 app.listen(3333, () => console.log('Server is running 3333'));
 ```
 
-* O projeto já está rodando na porta 3333 o express com utilização do typescript.
+* O projeto express já está rodando na porta 3333 o express com utilização do typescript. Basta rodar no terminar com o comando:
+
+```bash
+yarn dev
+```
+
+## Instalando ORM e dependencias para conectar ao banco
 
 * Instalando o TypeORM (neste exemplo será usado o ORM Typeorm e banco sqlite):
 ```bash
