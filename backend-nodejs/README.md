@@ -59,6 +59,8 @@ app.listen(3333, () => console.log('Server is running 3333'));
 yarn dev
 ```
 
+* Caso queira subir o projeto para o github ou qualquer outro repositório remoto criar um arquivo na raiz do projeto com o nome .giIgnore. Dentro desse arquivo colocar: /node_modules  (Para que não suba a pasta node_modules para o git).
+
 ## Instalando ORM e dependencias para conectar ao banco
 
 * Instalando o TypeORM (neste exemplo será usado o ORM Typeorm e banco sqlite):
@@ -66,7 +68,16 @@ yarn dev
 yarn add typeorm reflect-metadata sqlite3
 ```
 
-* Dentro de src criar o diretório database/index.ts, no index:
+* Na raiz do projeto criar um arquivo com o nome de ormconfig.json, onde ficará as configurações com o banco de dados:
+
+```json
+{
+    "type": "sqlite",
+    "database": "src/database/database.sqlite"
+}
+```
+
+* Dentro de src criar o diretório database/index.ts, no index.ts colocar a seguinte configuração:
 ```ts
 import { createConnection } from 'typeorm';
 createConnection();
@@ -133,4 +144,15 @@ yarn typeorm migration:run
 
 ```bash
 yarn typeorm migration:revert
+```
+
+## Instalação das dependencias:
+
+```bash
+yarn
+```
+## Rodar o projeto:
+
+```bash
+yarn dev
 ```
