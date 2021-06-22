@@ -103,13 +103,16 @@ app.listen(3333, () => console.log('Serve is runing 3333'));
 },
 ```
 
-* Dentro do arquivo ormconfig.json criar o CLI (ferramenta para criar migrations pelo terminal, e definir em que local será criado os arquivos .ts das migrations):
+* Dentro do arquivo ormconfig.json criar o CLI (ferramenta para criar migrations pelo terminal, e definir em que local será criado os arquivos .ts das migrations), e onde será rodado as migrations:
 ```json
 {
-    "type": "sqlite",
-    "database": "./src/database/nlw5.sqlite",
-    "migrations": ["./src/database/migrations/**.ts"],
-    "entities": ["./src/entities/**.ts"],
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "123456",
+    "database": "nlw06",
+    "migrations": ["src/database/migrations/*.ts"],
     "cli": {
         "migrationsDir": "./src/database/migrations"
     }
