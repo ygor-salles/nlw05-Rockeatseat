@@ -7,6 +7,11 @@
 yarn init -y
 ```
 
+* Instalando o typescript
+```bash
+yarn add typescript -D
+```
+
 * Instalando o expressJS
 ```bash
 yarn add express
@@ -15,11 +20,6 @@ yarn add express
 * Instalando os tipos(typescript) do expressJS
 ```bash
 yarn add @types/express -D
-```
-
-* Instalando o typescript
-```bash
-yarn add typescript -D
 ```
 
 * Instalando o arquivo de confirguração typescript
