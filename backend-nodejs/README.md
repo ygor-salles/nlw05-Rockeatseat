@@ -99,11 +99,11 @@ app.listen(3333, () => console.log('Serve is runing 3333'));
 ```json
 "scripts": {
     "dev": "ts-node-dev src/server.ts",
-    "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
 },
 ```
 
-* Criar um arquivo ormconfig.json na raiz e colocar a configuração, onde ficará a configuração do bd configurações das migrations e entidades:
+* Dentro do arquivo ormconfig.json criar o CLI (ferramenta para criar migrations pelo terminal, e definir em que local será criado os arquivos .ts das migrations):
 ```json
 {
     "type": "sqlite",
