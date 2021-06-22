@@ -19,6 +19,8 @@ yarn tsc --init
 * Em tsconfig.json definir o strict como false
 
 * Instalar lib para ajudar o node a entender o import e from para não usar precisar usar const require(). Verificar pois em versões novas do node não precisa
+
+* Instalar ts-node para o javascript entender o typescript
 ```bash
 yarn add ts-node-dev -D
 ```
