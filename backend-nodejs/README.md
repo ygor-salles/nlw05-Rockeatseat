@@ -111,7 +111,7 @@ app.listen(3333, () => console.log('Serve is runing 3333'));
     "migrations": ["./src/database/migrations/**.ts"],
     "entities": ["./src/entities/**.ts"],
     "cli": {
-        "migrationsDir": "./src/databse/migrations"
+        "migrationsDir": "./src/database/migrations"
     }
 }
 ```
@@ -166,3 +166,7 @@ yarn
 ```bash
 yarn dev
 ```
+
+# Configuração para o PostgreSQL acesse o link
+
+https://github.com/ygor-salles/nlw06-Rocketseat#readme
