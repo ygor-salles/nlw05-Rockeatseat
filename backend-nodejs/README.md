@@ -113,6 +113,7 @@ app.listen(3333, () => console.log('Serve is runing 3333'));
     "password": "123456",
     "database": "nlw06",
     "migrations": ["src/database/migrations/*.ts"],
+    "entities": ["src/entities/*.ts"],
     "cli": {
         "migrationsDir": "./src/database/migrations"
     }
