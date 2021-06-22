@@ -59,7 +59,8 @@ app.listen(3333, () => console.log('Server is running 3333'));
 yarn dev
 ```
 
-* Caso queira subir o projeto para o github ou qualquer outro repositório remoto criar um arquivo na raiz do projeto com o nome .giIgnore. Dentro desse arquivo colocar: /node_modules  (Para que não suba a pasta node_modules para o git).
+* Caso queira subir o projeto para o github ou qualquer outro repositório remoto criar um arquivo na raiz do projeto com o nome .gitIgnore 
+* Dentro desse arquivo colocar: /node_modules  (Para que não suba a pasta node_modules para o git).
 
 ## Instalando ORM e dependencias para conectar ao banco
 
