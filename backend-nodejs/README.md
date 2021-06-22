@@ -132,6 +132,11 @@ yarn typeorm -help
 "emitDecoratorMetadata": true,
 ```
 
+* Ainda dentro de tsconfig.json descomentar tb a linha com o atributo strictPropertyInitialization e defini-lo como false, para que não dê erro na inicialização dos atributos dos objetos: 
+```json
+"strictPropertyInitialization": false,
+```
+
 ## Adicionar a biblioteca uuid e os tipos do uuid, opcional. Para geração de IDs das tabelas dos bancos:
 ```bash
 yarn add uuid
