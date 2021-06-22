@@ -1,6 +1,6 @@
 # Projeto backend
 
-## Configurações e dependencias adicionadas na criação do projeto:
+## Configurações e dependencias iniciais na criação do projeto:
 
 * Instalando o nodeJS
 ```bash
