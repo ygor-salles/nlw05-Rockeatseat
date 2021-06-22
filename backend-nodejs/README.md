@@ -42,9 +42,19 @@ yarn add @types/express -D
 },
 ```
 
-* Criar uma pasta src com arquivo server.ts
+* Criar uma pasta src com arquivo server.ts - Escolher a porta que irá startar o server, neste exemplo é 3333
 
-* Instalando o TypeORM:
+```ts
+import express from 'express';
+
+const app = express();
+
+app.listen(3333, () => console.log('Server is running 3333'));
+```
+
+* O projeto já está rodando na porta 3333 o express com utilização do typescript.
+
+* Instalando o TypeORM (neste exemplo será usado o ORM Typeorm e banco sqlite):
 ```bash
 yarn add typeorm reflect-metadata sqlite3
 ```
