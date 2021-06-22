@@ -116,16 +116,25 @@ app.listen(3333, () => console.log('Serve is runing 3333'));
 }
 ```
 
-* Dentro de tsconfig.json:
-descomentar as linhas:
+* Para validar se a CLI do typeorm está rfuncionando executar o comando:
+```bash
+yarn typeorm -help
+```
+
+## Configuração para utilização de decorators no typescript, necessário pois o typeorm utiliza-se dos decorators
+
+* Dentro de tsconfig.json, descomentar as linhas:
 ```json
 "experimentalDecorators": true,
 "emitDecoratorMetadata": true,
 ```
 
-* Adicionar a biblioteca uuid e os tipos:
+## Adicionar a biblioteca uuid e os tipos do uuid, opcional. Para geração de IDs das tabelas dos bancos:
 ```bash
 yarn add uuid
+```
+
+```bash
 yarn add @types/uuid -D
 ```
 
